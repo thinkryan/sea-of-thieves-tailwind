@@ -10,7 +10,7 @@ Things I'm learning within this are:
 * CSS Architecture
 * HTML5 and Semantics
 * Javascript
-* SASS
+* SCSS
 * Webpack
 * Laravel Mix
 * NPM
