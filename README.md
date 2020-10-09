@@ -2,7 +2,7 @@
 
 This is merely meant as a learning project and nothing else. 
 
-I decided to re-create the official Sea Of Thieves website utilizing TailwindCSS as a learning project.
+I decided to re-create the official Sea Of Thieves website homepage utilizing TailwindCSS as a learning project.
 
 Things I'm learning within this are:
 
