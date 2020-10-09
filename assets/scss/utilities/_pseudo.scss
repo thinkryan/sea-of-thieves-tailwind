@@ -1,0 +1,23 @@
+.sot-pseudo-after {
+  &:after {
+    content: "";
+
+    @apply sot-w-full
+    sot-h-full
+    sot-block
+    sot-absolute
+    sot-pointer-events-none;
+
+  }
+}
+
+.sot-pseudo-before {
+  &:before {
+    content: "";
+
+    @apply sot-block
+    sot-absolute
+    sot-pointer-events-none;
+
+  }
+}

@@ -1,0 +1,61 @@
+.sot-menu {
+
+  @apply sot-list-none
+  sot-hidden;
+
+  @screen mlg {
+    @apply sot-block;
+  }
+
+  .sot-menu--inner {
+    @apply sot-flex
+    sot-flex-1;
+  }
+
+  .sot-menu-item {
+
+    @apply sot-text-menu-green
+    sot-text-menu
+    sot-px-2;
+
+    &:hover {
+      @apply sot-text-menu-item-hover
+      sot-transition
+      sot-duration-500
+      sot-ease-in-out;
+    }
+
+    .sot-menu-item--inner {
+
+      .menu-item--link {
+
+        &:after {
+
+          @apply sot-absolute
+          sot-block
+          sot-opacity-0
+          sot-left-0
+          sot-w-full
+          sot-h-full;
+
+          content: "";
+          /* https://cubic-bezier.com/#.47,0,.74,.72 */
+          transition: opacity .4s cubic-bezier(.47, 0, .74, .72);
+          background: url(../images/menu/item-hover.svg) no-repeat 50% 100%/100% 100%;
+          bottom: 4px;
+          max-width: 100px;
+          z-index: -1;
+        }
+      }
+
+    }
+
+    .sot-right-arrow {
+      color: #f1eee5;
+      height: 0.65rem;
+      padding-top: 0.45rem;
+      padding-bottom: 0.45rem;
+    }
+
+  }
+}

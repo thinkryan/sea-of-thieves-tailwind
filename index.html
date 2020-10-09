@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sea Of Thieves</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <script type="module" src="./dist/js/main.js"></script>
+</head>
+<body class="sot-antialiased sot-font-manuskript">
+
+<div class="sot-header-wrapper sot-pseudo-after">
+
+    <div class="sot-header-wrapper--top-level sot-p-1">
+        <!-- mobile header -->
+        <div class="sot-flex sot-header-wrapper--inner sot-justify-between sot-items-center md:sot-pt-1 xl:sot-pt-3">
+
+            <div class="sot-flex sot-px-0 sot-items-center sot-flex-shrink-0">
+                <div aria-label="Sea Of Thieves Logo" class="sot-logo"></div>
+                <div class="sot-pl-16">
+                    <div class="sot-menu">
+                        <ul class="sot-menu--inner">
+                            <!-- @todo adjust h-{#} values within Tailwind config to match similar height values of SoT -->
+                            <li class="sot-menu-item sot-relative">
+                                <a class="sot-menu-item--inner has-sub sot-relative" href="#">
+                                    <span class="menu-item--link">The Game</span></a>
+                                <svg class="sot-w-2 sot-fill-current sot-right-arrow sot-float-right sot-px-1 sot-py-2"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 14.99 22.62" aria-hidden="true"
+                                     role="presentation">
+                                    <path class="a"
+                                          d="M15 11l-3.93 3.58c-3 2.25-9.85 7.3-10 7.49l-1 .59v-2l.54-.69c2.1-2.65 4.79-5.55 7.66-9L5.94 8C3.65 5 3.43 3.44.85 0c0 0 8 5.6 10.32 7.31z"></path>
+                                </svg>
+                            </li>
+                            <li class="sot-menu-item"><a
+                                    class="sot-menu-item--inner sot-text-menu-green hover:sot-text-menu-item-hover sot-px-2"
+                                    href="#">Community</a>
+                                <svg class="sot-w-2 sot-fill-current sot-right-arrow sot-float-right sot-px-1 sot-py-2"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 14.99 22.62" aria-hidden="true"
+                                     role="presentation">
+                                    <path class="a"
+                                          d="M15 11l-3.93 3.58c-3 2.25-9.85 7.3-10 7.49l-1 .59v-2l.54-.69c2.1-2.65 4.79-5.55 7.66-9L5.94 8C3.65 5 3.43 3.44.85 0c0 0 8 5.6 10.32 7.31z"></path>
+                                </svg>
+                            </li>
+                            <li class="sot-menu-item"><a
+                                    class="sot-menu-item--inner sot-text-menu-green hover:sot-text-menu-item-hover sot-px-2"
+                                    href="#">News</a></li>
+                            <li class="sot-menu-item"><a
+                                    class="sot-menu-item--inner sot-text-menu-green hover:sot-text-menu-item-hover sot-px-2"
+                                    href="#">Support</a>
+                                <svg class="sot-w-2 sot-fill-current sot-right-arrow sot-float-right sot-px-1 sot-py-2"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 14.99 22.62" aria-hidden="true"
+                                     role="presentation">
+                                    <path class="a"
+                                          d="M15 11l-3.93 3.58c-3 2.25-9.85 7.3-10 7.49l-1 .59v-2l.54-.69c2.1-2.65 4.79-5.55 7.66-9L5.94 8C3.65 5 3.43 3.44.85 0c0 0 8 5.6 10.32 7.31z"></path>
+                                </svg>
+                            </li>
+                            <li class="sot-menu-item"><a
+                                    class="sot-menu-item--inner sot-text-menu-green hover:sot-text-menu-item-hover sot-px-2"
+                                    href="#">Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sot-flex sot-items-center sot-flex-shrink-0 sot-flex-no-wrap">
+                <!-- CTA -> tablet>-->
+                <div class="sot-cta-header sot-button-cta sot-hidden sm:sot-block sot-px-4 sot-pt-2 sot-pb-4">
+                    <!-- button -->
+                    <a href="#"
+                       class="sot-dark-green--kraken sot-pseudo-after sot-button sot-button--sm sot-dark-green sot-font-bold sot-leading-loose">
+                        Play Now
+                    </a>
+                    <!-- //button -->
+                </div>
+                <!-- //CTA -->
+                <!-- User Profile -->
+                <div class="sot-user-profile">
+                    <a href="#">
+                        <svg class="sot-fill-current sot-transition sot-duration-1000 sot-ease-in-out sot-text-white hover:sot-text-header-hover sot-h-6"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 22.81 20.642" preserveAspectRatio="none"
+                             aria-hidden="true"
+                             role="presentation">
+                            <g>
+                                <path d="M18.392 2.914C16.81-.566 10.284.04 10.284.04S5.81.434 4.81 3.434 0 6.59 0 6.59l3.055 4.486a26.18 26.18 0 0 1 3.356-1.664c.644 2.238 2.307 6.795 5.243 7.079 3.9.377 4.101-7.002 4.101-7.002a21.473 21.473 0 0 0-6.278-1.02 8.305 8.305 0 0 1 1.672-.167 10.942 10.942 0 0 1 5.265 1.187h3.87l2.526-4.055s-2.836.96-4.418-2.52zm-8.9 2.896s.954-3.071 2.324-3.071c1.37 0 1.71 3.07 1.71 3.07a10.635 10.635 0 0 0-4.033 0z"></path>
+                                <path d="M11.15 17.527c-2.491.337-5.053-4.46-5.053-4.46l.355 3.035s3.17 4.483 5.153 4.54c1.982.056 5.998-4.143 5.998-4.143l-1.275-3.952c-1.275 4.47-2.688 4.642-5.179 4.98z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <!-- //User Profile -->
+                <!-- Mobile Nav Hamburger -->
+                <nav role="navigation" class="sot-navigation sot-pl-4">
+                    <a href="#">
+                        <svg class="sot-fill-current sot-text-white hover:sot-text-menu-item-hover sot-h-4 sot-block lg:sot-hidden"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 20.96 14.19" aria-hidden="true"
+                             role="presentation">
+                            <path d="M10.72 3.35l-4.78-.71C3.61 2.3 2.65 1.71 0 1.31 0 1.3 8.29 0 8.36 0c4 .56 7.57.63 10.41 1l.54.07.5.07-.35 1c-.18 0-8.53 1.24-8.74 1.21zm8.05 8.48l.54.07.5.07-.35 1c-.19 0-8.54 1.21-8.75 1.18l-4.78-.71c-2.33-.34-3.28-.93-5.94-1.33 0 0 8.29-1.32 8.36-1.31 4.05.59 7.58.67 10.42 1.03zM.54 6.38L1 6.31l.54-.07c2.87-.36 6.43-.43 10.51-1 .06 0 8.9 1.3 8.86 1.3-2.68.4-4.06 1-6.42 1.33l-4.83.71c-.21 0-8.64-1.2-8.83-1.17z"></path>
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <!-- //mobile header -->
+    </div>
+</div>
+
+<!-- video mp4/ogv hero section -->
+<div class="sot-hero-wrapper">
+    <div class="sot-hero-banner" style="background-image: url('./dist/images/hero/sot_hero_logo.png');"
+         title="Sea Of Thieves" role="presentation">
+
+        <!-- trailer play button -->
+        <div>
+            <a href="#"
+               class="sot-button sot-button--lg sot-relative button-cta cta-pos sot-font-manuskript sot-text-2x1 sot-flex sot-justify-between">
+                <!-- play icon -->
+                <i class="icon icon-play sot-w-4 sot-h-4 sot-fill-current sot-absolute sot-left-0 sot-pl-6 sot-inset-x-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.59 19.03" aria-hidden="true"
+                         role="presentation">
+                        <path d="M18.25 8.64c0 1.53-.19 3.07-.23 4.6a.89.89 0 0 1-.15.4c-.41.67-.87 1.33-1.29 2a2.13 2.13 0 0 1-1.21 1c-.4.11-.78.28-1.18.39a57.65 57.65 0 0 1-6.42 1.67c-.3 0-.59.35-.89.35h-.23C6 18.54 5.3 18.43 4.73 18c-.29-.24-.67-.44-.94-.7-.65-.67-1.27-1.3-1.86-2a3.09 3.09 0 0 1-.76-1.15A31.3 31.3 0 0 1 0 7.76a1.57 1.57 0 0 1 .14-.86 17.36 17.36 0 0 1 2.49-3.39A6.18 6.18 0 0 1 5 1.7c.2-.06 1.7.72 1.9.65s-.51-1.14-.33-1.2C7.7.78 8.78.4 9.87 0a1.08 1.08 0 0 1 .64 0 6 6 0 0 1 1.39.65c1.63 1.09 3.23 2.22 4.84 3.35a2.78 2.78 0 0 1 1.47 2.07c0 .05.38.1.38.15v1.31c0 .37-.33.74-.34 1.11zm-2-2.88a.39.39 0 0 0-.12-.28c-.34-.21-.71-.38-1.06-.6-1.3-.88-2.63-1.66-3.92-2.53A1.25 1.25 0 0 0 10 2.14a22.19 22.19 0 0 0-5 1.94 3.43 3.43 0 0 0-.84.77 10.83 10.83 0 0 0-.69 1c-.32.56-.71 1.15-1.1 1.71a.74.74 0 0 0-.13.44c0 1 .06 2 .1 3 0 .43.05.85.1 1.27a2.67 2.67 0 0 0 .12.45c0 .16.05.36.15.47.29.3.61.55.92.82a18.65 18.65 0 0 0 3 2.3 1.84 1.84 0 0 0 .58.23c.1 0 .1 1.36.2 1.34s1.22-1.69 1.31-1.71c1.07-.27 1.6-.47 2.68-.73.56-.13 1.13-.24 1.7-.35s.84-.14 1.26-.24a.5.5 0 0 0 .33-.21 15.56 15.56 0 0 0 .92-2.64c.31-1.74.47-3.5.7-5.25-.03-.35-.02-.67-.04-.99zM13.7 9.42c-.24.16-.48.32-.48.48v.24c-.49 0-.58.24-.74.24-.08.16-.29.08-.37.24-.16 0-.39.24-.55.24-.08.16-.19.08-.27.24-.16 0-.34.24-.5.24-.08.16-.17.08-.25.24-.32.08-.41.16-.73.24-.08.16-.41.32-.49.48-.32.08-.41.16-.73.24-.08.16-.41.32-.49.48l-1.22.24c-.08-.24.08-.48 0-.72-.08 0 0-.72 0-.72v-1.19A7.82 7.82 0 0 1 6.15 7c.41-.26.4-.48.61-.94.93.08 1 .76 1.58.76h.24s.49.13.49.21c.32.08.65.3 1 .38 0 .08.49-.11.49.38h.73a.48.48 0 0 1 .49.49h1s.24.12.24.2c.24.08.24.14.49.22 0 .09.37.25.37.41s-.18.24-.18.31z"></path>
+                    </svg>
+                </i>
+                <!-- //play icon -->
+                Watch The Trailer
+            </a>
+        </div>
+        <!-- //trailer play button -->
+
+    </div>
+    <!-- Watch Trailer Button -->
+
+    <div class="sot-hero-wrapper--container">
+        <div class="sot-video-wrapper">
+            <video class="sot-video-wrapper--video" loop autoplay>
+                <source src="./videos/3937630f-d14b-4540-8276-6d0acbcc701c.mp4" type="video/mp4">
+                <source src="./videos/ae573618-4543-46c2-b211-e20c1bd40bb2.ogv" type="video/ogv">
+                <p>Sorry, your browser doesn't currently support embedded videos.</p>
+            </video>
+
+        </div>
+
+    </div>
+</div>
+<!-- //video -->
+
+<!-- Join The Crew Banner -->
+<div class="sot-banner-teal sot-banner-teal--retina sot-text-left"> <!-- full wrapper -->
+    <div class="sot-banner-interior sot-banner-interior--tattered">
+        <div class="sot-banner-contents sot-flex sot-items-center">
+            <div class="sot-banner-teal--product">
+
+            </div>
+            <div class="sot-flex-1">
+                <span class="sot-block sot-font-wind sot-text-md">Join the crew</span>
+                <span class="sot-block sot-font-wind sot-text-3xl sot-uppercase">Play Sea Of Thieves Today</span>
+            </div>
+            <div class="sot-flex-2">
+                CTA Button
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //Join The Crew Banner -->
+
+<footer>
+
+</footer>
+
+</body>
+</html>

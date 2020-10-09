@@ -1,0 +1,98 @@
+.sot-header-wrapper {
+
+  z-index: 101;
+  transition: top .3s;
+
+  @apply sot-top-0
+  sot-fixed
+  sot-left-0
+  sot-w-full;
+
+  &:before {
+    height: 80%;
+    content: "";
+    @apply sot-bg-conic-t-menu;
+  }
+
+  &:after {
+    height: calc(100% + theme('spacing.2'));
+    background: url(../images/dt_header_sublayer.svg) repeat-x 50% 100%/1200px 144px;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    content: "";
+  }
+
+  &--top-level {
+    background: url('../images/dt_header_top-layer.svg') repeat-x 0 0/auto 100%;
+    @apply sot-relative
+    sot-z-10
+    sot-h-auto;
+
+    &:after {
+      background-image: url('../images/dt_header_sublayer.svg');
+      content: "";
+    }
+
+    @screen md {
+      @apply sot-h-16;
+    }
+
+    @screen xl {
+      @apply sot-h-20;
+    }
+
+  }
+
+  &--inner {
+    @apply sot-mx-auto
+    sot-flex;
+    max-width: 1440px;
+  }
+}
+
+/*
+* Logo Structure
+ */
+
+.sot-logo {
+  background-image: url('../images/menu/logo.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  @apply sot-p-2
+  sot-w-32
+  sot-h-5;
+
+  &:hover {
+    background-image: url('../images/menu/sot_logo_hover.svg');
+  }
+
+  &:active {
+    @apply sot-outline-none;
+  }
+
+  @screen xs {
+    @apply sot-h-5
+    sot-mt-px
+    sot-ml-8;
+  }
+
+  @screen lg {
+    @apply sot-w-40
+    sot-h-6
+    sot-ml-8;
+  }
+
+}
+
+.sot-user-profile {
+
+}
+
+/* @todo semantics for HTML5 */
+nav {
+  .sot-navigation {
+
+  }
+}

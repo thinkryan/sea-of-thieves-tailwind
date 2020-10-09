@@ -1,0 +1,32 @@
+/** Monterrat Fonts **/
+
+@font-face {
+  font-family: Manuskript;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/manuskript/ManuskriptAntDReg-Regular.woff") format("woff"),
+  url("../fonts/manuskript/ManuskriptAntDReg-Regular.woff2") format("woff2"),
+  url("../fonts/manuskript/manuskript-regular.ttf") format("truetype"),
+  url("../fonts/manuskript/ManuskriptAntDReg-Regular.svg") format("svg")
+}
+
+@font-face {
+  font-family: Manuksript;
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/manuskript/ManuskriptAntD-Ita.woff") format("woff"),
+  url("../fonts/manuskript/ManuskriptAntD-Ita.woff2") format("woff2"),
+  url("../fonts/manuskript/manuskript-italic.ttf") format("truetype"),
+  url("../fonts/manuskript/ManuskriptAntD-Ita.svg") format("svg")
+}
+
+@font-face {
+  font-family: Windlass;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/windlass/windlass.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/windlass/Windlass.woff2") format("woff2"),
+  url("../fonts/windlass/Windlass.woff") format("woff"),
+  url("../fonts/windlass/windlass.ttf") format("truetype"),
+  url("../fonts/windlass/Windlass.svg") format("svg")
+}

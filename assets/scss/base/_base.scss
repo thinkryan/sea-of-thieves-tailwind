@@ -1,0 +1,21 @@
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+.mode {
+  &-dark,
+  &-light {
+    @apply sot-text-base;
+  }
+
+  //Dark mode variants
+  &-dark {
+
+  }
+
+  //Light variants
+  &-light {
+
+  }
+
+}

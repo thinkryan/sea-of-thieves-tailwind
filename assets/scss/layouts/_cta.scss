@@ -1,0 +1,12 @@
+.sot-cta-header {
+
+  @screen md {
+    clip-path: inset(0, 0, 0, 0);
+  }
+
+  @screen lg {
+    clip-path: none;
+  }
+
+}
+

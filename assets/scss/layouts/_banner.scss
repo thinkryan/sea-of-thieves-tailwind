@@ -1,0 +1,71 @@
+.sot-banner-teal {
+
+  @apply sot-relative;
+
+  transform: translateY(-50%);
+
+  @screen md {
+
+  }
+
+  &--retina {
+
+    z-index: 1;
+
+    &:before {
+      content: "";
+      background: url("../images/smoke-retina.png") no-repeat 50% 50%;
+    }
+  }
+
+  &--product {
+
+    &:before {
+      content: "";
+      background: url("../images/banner/product.png") no-repeat 50% 100%;
+    }
+
+    &:after {
+      content: "";
+    }
+  }
+
+}
+
+.sot-banner-contents {
+  @apply sot-mx-auto;
+
+  max-width: 1440px;
+}
+
+.sot-banner-interior {
+
+  @apply sot-relative;
+
+  background: url("../images/banner/teal-background-small.jpg") no-repeat 50% 50%/100%;
+
+  @screen xl {
+    background: url("../images/banner/teal-background-large.jpg") no-repeat 50% 50%/100%;
+  }
+
+  &:before {
+    content: "";
+  }
+
+  &--tattered:before, &--tattered:after {
+
+    @apply sot-block
+    sot-w-full;
+
+    content: "";
+    transform: translateY(-50%);
+    background: url("../images/banner/tattered-before.svg") repeat-x 50% 50%/100%;
+    pointer-events: none;
+    height: 13px;
+  }
+
+  &--tattered:before, &--tattered:after {
+    position: absolute;
+    left: 0; /* push dividers all the way to the left and repeat-x do its work */
+  }
+}

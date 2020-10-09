@@ -1,0 +1,42 @@
+{
+  "name": "sea-of-thieves-replication-playground",
+  "version": "1.0.0",
+  "description": "Sea Of Thieves - Replicating the official website into TailwindCSS - Playground Project",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": ""
+  },
+  "author": "Ryan Dennler",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.5",
+    "masonry-layout": "^4.2.2",
+    "postcss-cli": "^7.1.2",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.26.11",
+    "sass-loader": "^8.0.2",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "^1.8.10",
+    "tailwindcss-aspect-ratio": "^2.0.0",
+    "tailwindcss-gradients": "^3.0.0",
+    "tailwindcss-important": "^1.0.0",
+    "tailwindcss-transforms": "^2.2.0",
+    "tailwindcss-transitions": "^2.2.0",
+    "tailwindcss-triangle-after": "^1.2.0",
+    "tailwindcss-visuallyhidden": "^1.0.2",
+    "tailwindcss-writing-mode": "^1.0.0",
+    "underscore": "^1.11.0",
+    "vue-template-compiler": "^2.6.12",
+    "webpack-livereload-plugin": "^1.2.0"
+  }
+}

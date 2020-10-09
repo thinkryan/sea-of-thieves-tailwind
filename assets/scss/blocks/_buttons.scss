@@ -1,0 +1,62 @@
+.sot-button {
+
+  @apply sot-text-white
+  sot-relative
+  sot-uppercase
+  sot-leading-relaxed;
+
+  background: url('../images/buttons/green-button-border-sprite.svg#off');
+
+  &:hover {
+    background: url('../images/buttons/green-button-border-sprite.svg#on');
+  }
+
+  &--sm {
+    @apply sot-px-12
+    sot-text-sm
+    sot-py-3
+    sot-mx-2;
+  }
+
+  &--lg {
+    @apply sot-px-12
+    sot-text-base
+    sot-py-4;
+  }
+
+  &:after {
+    content: "";
+  }
+
+}
+
+.sot-dark-green {
+  background: url('../images/buttons/turquoise-button-sprite.svg#off');
+
+  &:hover {
+    background: url('../images/buttons/turquoise-button-sprite.svg#hover');
+  }
+
+  &--kraken {
+
+    z-index: unset;
+
+    &:active, &:focus {
+      @apply sot-shadow-green;
+    }
+
+    &:after {
+      content: "";
+      height: 402% !important;
+      width: 120% !important;
+      max-height: 120px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      background: url("../images/small-kraken-background.png") no-repeat 50% 50%/auto 100%;
+
+    }
+  }
+
+}

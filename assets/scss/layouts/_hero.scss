@@ -1,0 +1,115 @@
+.sot-hero-wrapper {
+
+  height: 100%;
+  min-height: 550px;
+
+  @apply sot-relative
+  sot-m-auto;
+
+  @screen md {
+    height: 100%;
+    min-height: 625px;
+  }
+
+  @screen lg {
+    height: 100%;
+    min-height: 685px;
+  }
+
+  @screen xl {
+    height: 100%;
+    min-height: 735px;
+  }
+
+  .sot-hero-banner {
+    @apply sot-absolute
+    sot-z-10
+    sot-left-0
+    sot-w-full
+    sot-overflow-hidden
+    sot-whitespace-no-wrap;
+
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 65%;
+    text-indent: 100%;
+    background: transparent no-repeat 50% 50%/auto 100%;
+
+    .button-cta {
+      @apply sot-absolute
+      sot-z-10
+      sot-w-32
+      sot-text-cta
+      sot-tracking-wide
+      sot-border-0
+      sot-border-r-0;
+
+      /* set tailwind config for min-w? */
+      left: 50%;
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100px);
+      top: 80%;
+      /*top: 90%; @todo this could possibly be djusted in responsive sets to adjust for each viewpoint */
+      max-height: 20px;
+      max-width: 215px;
+
+      &:hover {
+        background: url('../images/buttons/green-button-border-sprite-hover.svg#hover');
+      }
+
+      &:active, &:focus {
+        @apply sot-shadow-green;
+      }
+    }
+
+    @screen xl {
+      .cta-pos {
+        @apply sot-bottom-0;
+      }
+    }
+
+    @screen lg {
+      .cta-pos {
+        @apply sot-bottom-0;
+      }
+    }
+
+    @screen md {
+      .cta-pos {
+        @apply sot-bottom-0;
+      }
+    }
+
+  }
+
+  &--container {
+
+    @apply sot-absolute
+    sot-w-full
+    sot-h-full
+    sot-overflow-hidden
+    sot-top-0;
+
+    .sot-video-wrapper {
+
+      @apply sot-relative;
+
+      &--video {
+        width: 1920px;
+        height: 1080px;
+        left: 50%;
+        margin-left: -960px;
+        max-width: inherit;
+
+        @apply sot-absolute
+        sot-top-0;
+      }
+
+    }
+
+  }
+
+}
+
+
