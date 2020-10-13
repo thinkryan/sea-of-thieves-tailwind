@@ -1,37 +1,3 @@
-.sot-banner-teal {
-
-  @apply sot-relative;
-
-  transform: translateY(-50%);
-
-  @screen md {
-
-  }
-
-  &--retina {
-
-    z-index: 1;
-
-    &:before {
-      content: "";
-      background: url("../images/smoke-retina.png") no-repeat 50% 50%;
-    }
-  }
-
-  &--product {
-
-    &:before {
-      content: "";
-      background: url("../images/banner/product.png") no-repeat 50% 100%;
-    }
-
-    &:after {
-      content: "";
-    }
-  }
-
-}
-
 .sot-banner-contents {
   @apply sot-mx-auto;
 
