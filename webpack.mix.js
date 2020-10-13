@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 const tailwind = require('tailwindcss');
+const purge = require('laravel-mix-purgecss');
 let LiveReloadPlugin = require('webpack-livereload-plugin');
 
 /** General WebPack configuration **/
@@ -29,6 +30,7 @@ mix.sass('./assets/scss/main.scss', './dist/css/')
     .options({
         processCssUrls: false,
         postCss: [
-            tailwind('./tailwind.js')
+            tailwind('./tailwind.js'),
         ],
-    });
+    })
+    .purgeCss();
