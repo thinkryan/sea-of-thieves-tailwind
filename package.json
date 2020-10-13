@@ -15,11 +15,13 @@
   "author": "Ryan Dennler",
   "license": "ISC",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.12",
     "browser-sync-webpack-plugin": "^2.0.1",
     "cross-env": "^7.0.2",
     "laravel-mix": "^5.0.5",
+    "laravel-mix-purgecss": "^5.0.0",
     "masonry-layout": "^4.2.2",
     "postcss-cli": "^7.1.2",
     "resolve-url-loader": "^3.1.0",
