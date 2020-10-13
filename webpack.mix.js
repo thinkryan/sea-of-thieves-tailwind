@@ -1,6 +1,6 @@
 const mix = require('laravel-mix');
 const tailwind = require('tailwindcss');
-const purge = require('laravel-mix-purgecss');
+require('laravel-mix-purgecss');
 let LiveReloadPlugin = require('webpack-livereload-plugin');
 
 /** General WebPack configuration **/
