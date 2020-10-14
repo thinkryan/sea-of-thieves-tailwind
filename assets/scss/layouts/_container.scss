@@ -1,4 +1,11 @@
-.container {
-  
+.sot-container {
+
+  &:before {
+    @apply sot-clearfix;
+    content: "";
+  }
+
+  @apply sot-mx-auto sot-my-auto;
+
   max-width: 1440px;
 }

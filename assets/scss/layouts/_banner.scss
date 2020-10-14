@@ -1,37 +1,73 @@
-.sot-banner-contents {
-  @apply sot-mx-auto;
+.sot-banner {
 
-  max-width: 1440px;
-}
-
-.sot-banner-interior {
-
-  @apply sot-relative;
-
-  background: url("../images/banner/teal-background-small.jpg") no-repeat 50% 50%/100%;
-
-  @screen xl {
-    background: url("../images/banner/teal-background-large.jpg") no-repeat 50% 50%/100%;
-  }
+  position: relative;
+  z-index: 5;
 
   &:before {
+    background: url(../images/smoke-retina.png) no-repeat 0 0/100% auto;
     content: "";
-  }
-
-  &--tattered:before, &--tattered:after {
-
-    @apply sot-block
-    sot-w-full;
-
-    content: "";
-    transform: translateY(-50%);
-    background: url("../images/banner/tattered-before.svg") repeat-x 50% 50%/100%;
-    pointer-events: none;
-    height: 13px;
-  }
-
-  &--tattered:before, &--tattered:after {
+    width: 27%;
+    height: 220%;
     position: absolute;
-    left: 0; /* push dividers all the way to the left and repeat-x do its work */
+    transform: translate(174px, -50px);
+    left: 0%;
+    top: -22%;
+    max-width: 1440px;
   }
+
+  .sot-banner-interior {
+
+    @apply sot-relative;
+
+    background: url("../images/banner/teal-background-small.jpg") no-repeat 50% 50%/100%;
+
+    @screen xl {
+      background: url("../images/banner/teal-background-large.jpg") no-repeat 50% 50%/100%;
+    }
+
+    &:before {
+      content: "";
+    }
+
+    &--tattered:before, &--tattered:after {
+
+      @apply sot-block
+      sot-w-full;
+
+      content: "";
+      transform: translateY(-50%);
+      background: url("../images/banner/tattered-before.svg") repeat-x 50% 50%/100%;
+      pointer-events: none;
+      height: 13px;
+    }
+
+    &--tattered:before, &--tattered:after {
+      position: absolute;
+      left: 0; /* push dividers all the way to the left and repeat-x do its work */
+    }
+
+    .sot-banner-text {
+
+      margin-left: 100px;
+
+      @screen md {
+        margin-left: 315px;
+      }
+
+    }
+
+    .sot-banner-contents {
+      @apply sot-mx-auto;
+
+      z-index: 5;
+      max-width: 1440px;
+    }
+
+    .sot-banner-cta {
+      &--button {
+
+      }
+    }
+  }
+
 }
