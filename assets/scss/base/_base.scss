@@ -2,6 +2,10 @@
   box-sizing: inherit;
 }
 
+.sot-gradient {
+  background: linear-gradient(90deg, #020E0D, #0B1E24, #0B1E24, #020E0D);
+}
+
 .mode {
   &-dark,
   &-light {
