@@ -1,6 +1,7 @@
 const mix = require('laravel-mix');
 const tailwind = require('tailwindcss');
 require('laravel-mix-purgecss');
+const simpleParallax = require('simple-parallax-js');
 let LiveReloadPlugin = require('webpack-livereload-plugin');
 
 /** General WebPack configuration **/
